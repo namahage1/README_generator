@@ -1,7 +1,8 @@
-# Project Title: 
-#gerfdsc
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# gsffd 
 ## Description
-htfdx## Table of Contents
+trsfd
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -9,15 +10,16 @@ htfdx## Table of Contents
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-5rd
+gsdf
 ## Usage
-5eargdfx
+gsdf
 ## License
-j6hw4gf
+MIT
+The MIT license gives express permission for users to reuse code for any purpose, sometimes even if code is part of proprietary software. As long as users include the original copy of the MIT license in their distribution, they can make changes or modifications to the code to suit their own needs.
 ## Contributions
-45erd
+trgsf
 ## Tests
-45
+4ergd
 ## Questions
-- GitHub: [namahage1](https://github.com/namahage1)
-- Reach me at:(mailto:shellyakiyama@gmail.com)
+- GitHub: [erdf](https://github.com/erdf)
+- Reach me at:(mailto:ter)
