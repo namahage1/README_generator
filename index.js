@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const fs = require('fs');
-const { makeBadge, ValidationError } = require('badge-maker');
-// TODO: Create an array of questions for user input
+
+
+// an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -52,28 +52,19 @@ const questions = [
     }, 
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-
-function createBadge(){
-    const format = {
-        label: 'build',
-        message: 'passed',
-        color: 'green',
-      }
-      
-      const svg = makeBadge(format)
-      console.log(svg) // <svg...
-      
-      try {
-        makeBadge({})
-      } catch (e) {
-        console.log(e) // ValidationError: Field `message` is required
-      } 
-
+//a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log('README file generated successfully!');
+        }
+    });
 }
-// TODO: Create a function to initialize app
+
+
+//a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then(answers => {
@@ -91,16 +82,9 @@ function init() {
         }else{
             console.log('none of the license');
         }
-''
-        const test = `${license}\n# ${answers.title} \n## Description\n${answers.description}\n## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [License](#license)\n- [Contributions](#contributions)\n- [Tests](#tests)\n- [Questions](#questions)\n## Installation\n${answers.installation}\n## Usage\n${answers.usage}\n## License\n${answers.license}\n${licenseDescription}\n## Contributions\n${answers.contributions}\n## Tests\n${answers.test}\n## Questions\n- GitHub: [${answers.github}](https://github.com/${answers.github})\n- Reach me at:(mailto:${answers.email})`;
-        fs.writeFile('new.md', test, err => {
-            if (err) {
-                console.error(err);
-            } else {
-                console.log('README file generated successfully!');
-            }
-        });
+        const data = `${license}\n# ${answers.title} \n## Description\n${answers.description}\n## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [License](#license)\n- [Contributions](#contributions)\n- [Tests](#tests)\n- [Questions](#questions)\n## Installation\n${answers.installation}\n## Usage\n${answers.usage}\n## License\n${answers.license}\n${licenseDescription}\n## Contributions\n${answers.contributions}\n## Tests\n${answers.test}\n## Questions\n- GitHub: [${answers.github}](https://github.com/${answers.github})\n- Reach me at:(mailto:${answers.email})`;
 
+         writeToFile('test_README.md', data);
     });
 }
 

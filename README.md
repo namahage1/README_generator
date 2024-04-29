@@ -1,43 +1,12 @@
-# Project Title: 
-
-# title
+# README file generator
 
 ## Description
-
-## Table of Contents
-
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributions](#contributions)
-- [Tests](#tests)
-- [Questions](#questions)
-
-
-## Installation
-
-
+A user answers the questions and based on the answer, this application will generate a professional README file for him/her.
 
 ## Usage
+- Generated README file name is test_README.md
+- Video link URL: [video](https://drive.google.com/file/d/15gniAy0SRPr9Fe95_7yxwxCtQUWDUES5/view)
+- github link : [github repo](https://github.com/namahage1/README_generator.git)
 
 
-## License
 
-
-
-## Badges
-
-![alt text](assets/badge/badge.svg)
-
-
-## Contributions
-
-
-## Tests
-
-test
-## Questions
-GitHub:
-
-Reach me at : 
